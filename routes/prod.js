@@ -5,7 +5,15 @@ const router = express.Router();
 
 router.get("/", async (req, res) => {
   try {
-    const products = await Prod.findAll();
+    const { categ_id } = req.query;
+    let products;
+
+    if (categ_id) {
+      products = await Prod.findAll({ where: { categ_id } });
+    } else {
+      products = await Prod.findAll();
+    }
+
     res.json(products);
   } catch (error) {
     res.status(500).json({ error: "Ошибка при получении продуктов" });
@@ -61,7 +69,7 @@ router.delete("/:id", async (req, res) => {
     const product = await Prod.findByPk(id);
     if (product) {
       await product.destroy();
-      res.status(204).send(); // Успешное удаление
+      res.status(204).send();
     } else {
       res.status(404).json({ error: "Продукт не найден" });
     }

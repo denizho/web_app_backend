@@ -61,7 +61,7 @@ router.delete("/:id", async (req, res) => {
     const sklad = await Sklad.findByPk(id);
     if (sklad) {
       await sklad.destroy();
-      res.status(204).send(); // Успешное удаление
+      res.status(204).send();
     } else {
       res.status(404).json({ error: "Склад не найден" });
     }

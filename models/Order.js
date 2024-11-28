@@ -21,6 +21,14 @@ const Order = sequelize.define(
         key: "id",
       },
     },
+    spec_ids: {
+      type: DataTypes.JSON,
+      allowNull: false,
+    },
+    cost: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
   },
   {
     freezeTableName: true,

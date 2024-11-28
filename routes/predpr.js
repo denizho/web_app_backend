@@ -60,7 +60,7 @@ router.delete("/:id", async (req, res) => {
     const predpr = await Predpr.findByPk(id);
     if (predpr) {
       await predpr.destroy();
-      res.status(204).send(); // Успешное удаление
+      res.status(204).send();
     } else {
       res.status(404).json({ error: "Заказ не найден" });
     }
