@@ -14,7 +14,7 @@
 Чтобы начать работу с этим проектом, клонируйте репозиторий и установите зависимости:
 ```
 bash
-git clone <repository-url>
+git clone github.com/denizho/web_app_backend
 cd server
 npm install
 ```
@@ -45,3 +45,5 @@ npm start
 - **sequelize**: ORM для MySQL на основе промисов для Node.js.
 - **sequelize-cli**: Интерфейс командной строки для Sequelize.
 - **nodemon**: Утилита, которая отслеживает изменения в вашем исходном коде и автоматически перезапускает сервер.
+
+Бэкенд запускается на порту 5000.
