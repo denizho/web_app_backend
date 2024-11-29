@@ -13,7 +13,7 @@
 
 Чтобы начать работу с этим проектом, клонируйте репозиторий и установите зависимости:
 ```bash
-  git clone github.com/denizho/web_app_backend
+  git clone https://github.com/denizho/web_app_backend.git
   cd server
   npm install
 ```
