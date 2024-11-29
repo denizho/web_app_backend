@@ -12,20 +12,18 @@
 ## Установка
 
 Чтобы начать работу с этим проектом, клонируйте репозиторий и установите зависимости:
-```
-bash
-git clone github.com/denizho/web_app_backend
-cd server
-npm install
+```bash
+  git clone github.com/denizho/web_app_backend
+  cd server
+  npm install
 ```
 Убедитесь, что у вас установлены Node.js и npm на вашем компьютере. Вы можете скачать их с [nodejs.org](https://nodejs.org).
 
 ## Использование
 
 Чтобы запустить сервер, используйте следующую команду:
-```
-bash
-npm start
+```bash
+  npm start
 ```
 Это запустит сервер с использованием nodemon, который автоматически перезапускает сервер при обнаружении изменений в файлах.
 
